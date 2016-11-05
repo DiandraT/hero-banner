@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img-flex {
+  width: 100%;
+}
+
+.banner {
+  overflow: hidden;
+  position: relative;
+  max-height: 500px;
+}
+
+.banner-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-size: 4rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  bottom: 0;
+  width: 100%;
+}
+
+.banner-body {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 2rem;
+
+  padding: 0 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+}
+
+.banner-head {
+  position: relative;
+}
