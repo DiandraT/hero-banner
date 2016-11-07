@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -8,45 +9,49 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 .img-flex {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .banner {
   position: relative;
-  overflow: hidden;
   max-height: 500px;
+  overflow: hidden;
 }
 
-.banner-title {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 50em;
+}
+
+h2 .banner-content,
+p .banner-content {
+  margin: 0;
+}
+
+span {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+h2 {
+  display: inline;
   font-size: 4rem;
   color: #fff;
-  background-color: rgba(0, 0, 0, .5);
-
-  margin-left: 2rem;
-
-  position: absolute;
-  bottom: 6rem;
-  left: 10%;
-  transform: translateX(-10%);
+  line-height: 1.40em;
 }
 
-.banner-body {
-  font-family: "Open Sans", sans-serif;
-  font-style: italic;
-  font-weight:100;
+p {
   font-size: 2rem;
-
-  padding: 0 3rem;
-
-  position: absolute;
-  bottom: 1rem;
-  left: 10%;
-  transform: translateX(-10%);
+  font-style: italic;
+  line-height: 1.4;
 }
